@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="first-container">
+      <div class="question-meter">
+        <p class="question-p"></p>
+        <progress class="meter" max="100" value="25"></progress>
+      </div>
+      <div class="score-container">
+        <p style="margin: 0">Score</p>
+        <p class="score"></p>
+      </div>
+    </div>
+    <div class="second-container">
+      <div class="choices">
+        <h1 class="question"></h1>
+        <div class="choice choice_a" onclick="checkAnswer(this.id)">
+          <div class="option">A</div>
+          <div class="answer a"></div>
+        </div>
+        <div class="choice choice_b" onclick="checkAnswer(this.id)">
+          <div class="option">B</div>
+          <div class="answer b"></div>
+        </div>
+        <div class="choice choice_c" onclick="checkAnswer(this.id)">
+          <div class="option">C</div>
+          <div class="answer c"></div>
+        </div>
+        <div class="choice choice_d" onclick="checkAnswer(this.id)">
+          <div class="option">D</div>
+          <div class="answer d"></div>
+        </div>
+      </div>
+    </div>
+    <div class="result">
+      <div class="result_score">
+        <span>Totla score: </span>
+        <span class="last_score"></span>
+      </div>
+      <button class="start_btn" onClick="location.href='main.html'">
+        Play Again
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- onload="updatePage()" -->
